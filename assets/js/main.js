@@ -68,16 +68,28 @@ var mostrar = tareas.forEach(function(el){
    document.write("<li><strong>Títulos: </strong>" + el.title + "<br></li>" 
    	)});
 
-//boton
+//Función para rescatar y añadir en un <li> lo que vamos ingresando 
 	function myFunction() {
 		var nombre = document.getElementById("titulousuario");
 		
 		var resultado = document.getElementById("añadir");
-		resultado.innerHTML += "<li>" + nombre.value + "<br>";
+		resultado.innerHTML += "<li><strong>" + nombre.value + "</strong><br>";
 		nombre.value = " ";		
 	}
 
-
+/*
+//Constructor
+function Nuevostitulos(userId, id, title, completed){
+	this.userId = userId,
+	this.id = id,
+	this.title = title,
+	this.completed = completed,
+	this.nuevoDato = function(){
+		var ntitulo = this.title;
+		tareas.push(document.getElementById("titulousuario").value);
+	}
+}
+*/
 
 
 
