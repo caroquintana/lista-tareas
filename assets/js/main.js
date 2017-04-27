@@ -77,19 +77,21 @@ var mostrar = tareas.forEach(function(el){
 		nombre.value = " ";	
 
 		//Constructor para agregar tarea
-	function Nuevostitulos(userId, id, title, completed){
-		this.userId = userId,
-		this.id = id,
-		this.title = title,
-		this.completed = completed,
-		this.nuevoDato = function(){
-			var ntitulo = this.title;
-			tareas.push(this);
-		}
-	}
+			function Nuevostitulos(userId, id, title, completed){
+				this.userId = userId,
+				this.id = id,
+				this.title = title,
+				this.completed = completed,
+				this.nuevoDato = function(){
+					var ntitulo = this.title;
+					tareas.push(this);
+				}
+			};
 
 	var nuevoIngreso = new Nuevostitulos("title");
-		nuevoIngreso.nuevoDato();	
+		nuevoIngreso.nuevoDato();
+
+	javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0	
 	}
 
 
