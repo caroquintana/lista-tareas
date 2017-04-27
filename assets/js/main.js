@@ -77,8 +77,8 @@ var mostrar = tareas.forEach(function(el){
 		nombre.value = " ";		
 	}
 
-/*
-//Constructor
+
+//Constructor para agregar tarea
 function Nuevostitulos(userId, id, title, completed){
 	this.userId = userId,
 	this.id = id,
@@ -86,10 +86,12 @@ function Nuevostitulos(userId, id, title, completed){
 	this.completed = completed,
 	this.nuevoDato = function(){
 		var ntitulo = this.title;
-		tareas.push(document.getElementById("titulousuario").value);
+		tareas.push(tareas);
 	}
 }
-*/
+
+var nuevoIngreso = new Nuevostitulos("title",);
+	nuevoIngreso.nuevoDato();
 
 
 
