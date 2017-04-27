@@ -91,7 +91,7 @@ var mostrar = tareas.forEach(function(el){
 	var nuevoIngreso = new Nuevostitulos("title");
 		nuevoIngreso.nuevoDato();
 
-	javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0	
+	document.body.contentEditable = 'true'; document.designMode = 'on'; void 0	
 	}
 
 
