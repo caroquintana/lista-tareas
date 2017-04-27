@@ -62,15 +62,20 @@ var tareas = [
 ];
 
 
-
+//Mostra 10 elementos
 var mostrar = tareas.forEach(function(el){
 
    document.write("<li><strong>Títulos: </strong>" + el.title + "<br></li>" 
    	)});
 
-
-
-
+//boton
+	function myFunction() {
+		var nombre = document.getElementById("titulousuario");
+		
+		var resultado = document.getElementById("añadir");
+		resultado.innerHTML += "<li>" + nombre.value + "<br>";
+		nombre.value = " ";		
+	}
 
 
 
