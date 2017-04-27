@@ -74,24 +74,26 @@ var mostrar = tareas.forEach(function(el){
 		
 		var resultado = document.getElementById("añadir");
 		resultado.innerHTML += "<li><strong>" + nombre.value + "</strong><br>";
-		nombre.value = " ";		
+		nombre.value = " ";	
+
+		//Constructor para agregar tarea
+	function Nuevostitulos(userId, id, title, completed){
+		this.userId = userId,
+		this.id = id,
+		this.title = title,
+		this.completed = completed,
+		this.nuevoDato = function(){
+			var ntitulo = this.title;
+			tareas.push(this);
+		}
+	}
+
+	var nuevoIngreso = new Nuevostitulos("title");
+		nuevoIngreso.nuevoDato();	
 	}
 
 
-//Constructor para agregar tarea
-function Nuevostitulos(userId, id, title, completed){
-	this.userId = userId,
-	this.id = id,
-	this.title = title,
-	this.completed = completed,
-	this.nuevoDato = function(){
-		var ntitulo = this.title;
-		tareas.push(tareas);
-	}
-}
 
-var nuevoIngreso = new Nuevostitulos("title",);
-	nuevoIngreso.nuevoDato();
 
 
 
